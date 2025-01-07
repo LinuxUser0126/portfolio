@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #004d99;
+  color: white;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+header h1:hover {
+  transform: scale(1.05);
+}
+/* Remove underline and ensure clickable text looks like plain text */
+header h1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Remove hover effect */
+header h1 a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* Remove focus (when clicking) outline */
+header h1 a:focus {
+  outline: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: #1a73e8;
+  transform: scale(1.05);
+}
+
+nav ul li a.active {
+  background-color: #005fbf;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  color: #004d99;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.testimonials-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  position: relative;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.zoomable-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 77, 153, 0.9); /* Slightly darker background for better contrast */
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.overlay h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for better readability */
+}
+
+.overlay p {
+  font-size: 14px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for better readability */
+}
+
+/* Modal Styling */
+/* Modal Styling */
+.image-modal {
+  visibility: hidden; /* Initially hidden */
+  opacity: 0; /* Fully transparent */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dim background */
+  display: flex; /* Enables flexbox for centering */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  z-index: 9999;
+  transition: visibility 0s, opacity 0.6s ease; /* Smooth fade-in effect */
+}
+
+.image-modal.active {
+  visibility: visible; /* Make it visible */
+  opacity: 1; /* Fully opaque */
+  transition: visibility 0s, opacity 0.6s ease; /* Smooth fade-in effect */
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transform: scale(0.5); /* Start smaller */
+  transition: transform 0.6s ease, opacity 0.6s ease; /* Smooth scale and fade */
+}
+
+.image-modal.active .modal-content {
+  transform: scale(1); /* Grow to full size */
+  opacity: 1; /* Fully opaque */
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.close-modal:hover {
+  transform: scale(1.2);
+  color: #ff5757;
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #004d99;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
