@@ -28,7 +28,7 @@ lesson3: [
 "https://i.postimg.cc/Z5JGfkKh/61.jpg",
 "https://i.postimg.cc/kXNrFMCc/62.jpg",
 "https://i.postimg.cc/cLTV2Drt/63.jpg",   
-],
+	
 lesson2: [
 "https://i.postimg.cc/PJ2xPWSL/7.jpg",
 "https://i.postimg.cc/dQBDHFJq/8.jpg",
