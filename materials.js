@@ -96,11 +96,10 @@ lesson1: [
 	"C:/Users/Supervisor/Desktop/Portfolio/Image/StudentWork/9.jpg",
   ],
   student2: [
-    "C:/Users/Supervisor/Desktop/Portfolio/Image/StudentWork2/6.jpg",
-    "C:/Users/Supervisor/Desktop/Portfolio/Image/StudentWork2/7.jpg",
-	"C:/Users/Supervisor/Desktop/Portfolio/Image/StudentWork2/8.jpg",
-	"C:/Users/Supervisor/Desktop/Portfolio/Image/StudentWork2/9.jpg",
-    //"C:/Users/Supervisor/Desktop/Portfolio/Image/StudentWork2/5.jpg",
+  "https://i.postimg.cc/7ZM2kzk2/6.jpg",
+  "https://i.postimg.cc/SxpM3rw4/7.jpg",
+  "https://i.postimg.cc/zfxHL13D/8.jpg",
+  "https://i.postimg.cc/1zmN5zmY/9.jpg",
   ],
   student3: [
     "C:/Users/Supervisor/Desktop/Portfolio/Image/StudentWork3/1.jpg",
