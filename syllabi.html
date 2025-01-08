@@ -1,40 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teaching Statement</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <h1>Teacher Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="teaching.html">Teaching Statement</a></li>
-          <li><a href="syllabi.html">Syllabi</a></li>
-          <li><a href="materials.html">Materials</a></li>
-          <li><a href="diversity.html">Diversity Statement</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syllabi</title>
+  <link rel="stylesheet" href="syllabi.css">
+  <script defer src="syllabi.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1><a href="index.html">Teacher Portfolio</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="teaching.html">Teaching Statement</a></li>
+        <li><a href="syllabi.html" class="active">Syllabi</a></li>
+        <li><a href="materials.html">Materials</a></li>
+        <li><a href="diversity.html">Diversity Statement</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Teaching Content -->
-    <section class="content">
-  <h2>Syllabi</h2>
-  <p>
-    Explore detailed syllabi for the courses I’ve designed, outlining topics, learning outcomes, and assessments 
-    to ensure effective teaching and learning.
-  </p>
-</section>
+  <!-- Syllabi Section -->
+  <section class="syllabi-section">
+    <h2>Syllabi</h2>
+    <p>Explore detailed course syllabi, objectives, and learning outcomes for my classes.</p>
 
+    <!-- Accordion for Courses -->
+    <div class="accordion">
+      <!-- Course 1 -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>📘 C Programming</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Develop core programming skills by mastering C language fundamentals, including variables, control structures, functions, loops, and arrays.</p>
+          <ul>
+            <li>Introduction to C Language</li>
+            <li>Data Types and Variables</li>
+            <li>Control Structures (If-Else, Switch)</li>
+            <li>Loops (For, While, Do-While)</li>
+            <li>Functions</li>
+            <li>Arrays</li>
+            <li>Strings</li>
+            <li>Final Project</li>
+          </ul>
+          <a href="C:/Users/Supervisor/Desktop/Portfolio/Files/syllabi1.pdf" target="_blank" rel="noopener noreferrer" class="download-button">Download Syllabus</a>
+        </div>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Teacher Portfolio. All rights reserved.</p>
-    </footer>
-  </body>
+      <!-- Course 2 -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>🌐 Web Development (HTML, CSS, JavaScript)</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Learn how to build responsive and dynamic websites using core web technologies, from basic structure to advanced interactivity.</p>
+          <ul>
+            <li>Introduction to HTML and CSS</li>
+            <li>Creating Web Pages and Forms</li>
+            <li>Responsive Web Design with Flexbox and Grid</li>
+            <li>JavaScript Basics and DOM Manipulation</li>
+            <li>Event Handling and Form Validation</li>
+            <li>Introduction to APIs</li>
+            <li>Building Interactive Web Applications</li>
+          </ul>
+          <a href="C:/Users/Supervisor/Desktop/Portfolio/Files/syllabi2.pdf" target="_blank" rel="noopener noreferrer" class="download-button">Download Syllabus</a>
+        </div>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>🤖 Robotics and IoT with iRover Kit (ESP32)</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Explore the exciting world of robotics and IoT by learning how to assemble, program, and troubleshoot the iRover Kit using the ESP32 microcontroller.</p>
+          <ul>
+            <li>Introduction to Robotics and IoT Concepts</li>
+            <li>Assembling the iRover Kit</li>
+            <li>Basic Movement Control</li>
+            <li>Obstacle Detection using Ultrasonic Sensors</li>
+            <li>Line Following using IR Sensors</li>
+            <li>Creating a Smart Lock System</li>
+            <li>IoT Basics and Cloud Connectivity</li>
+            <li>Final Project: Smart Home System</li>
+          </ul>
+          <a href="C:/Users/Supervisor/Desktop/Portfolio/Files/syllabi3.pdf" target="_blank" rel="noopener noreferrer" class="download-button">Download Syllabus</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Teacher Portfolio. All rights reserved.</p>
+  </footer>
+</body>
 </html>
