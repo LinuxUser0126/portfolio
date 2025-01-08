@@ -19,36 +19,54 @@
                 <li><a href="diversity.html">Diversity Statement</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
             </ul>
+            <!-- Hamburger Menu -->
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </nav>
     </header>
-	
-	<!-- Teaching Statement Section  -->
-  <section class="teaching-section">
-    <h2>Teaching Statement</h2>
-    <p>
-     My teaching philosophy emphasizes student engagement, critical thinking, and active participation. I strive to create an inclusive learning environment where every student feels valued and challenged.    </p>
-    <!-- Diversity Highlights -->
-    <div class="teaching-grid">
-      <div class="teaching-card">
-        <img src="https://i.postimg.cc/cH5d0gVB/engagement.jpg" alt="Cultural Awareness">
-        <h3>Engagement</h3>
-        <p>I believe in the power of interactive teaching methods to spark curiosity and keep students actively involved in the learning process.</p>
-      </div>
-      <div class="teaching-card">
-        <img src="https://i.postimg.cc/JhMrqWNZ/critical.jpg" alt="Equity and Inclusion">
-        <h3>Critical Thinking</h3>
-        <p>Ensuring equal opportunities and embracing individual differences to create a fair learning environment.</p>
-		</div>
-      <div class="teaching-card">
-        <img src="https://i.postimg.cc/15Fy1zMD/inclusivity.jpg" alt="Collaborative Spirit">
-        <h3>Inclusivity</h3>
-        <p>Encouraging teamwork and mutual support to build a strong and inclusive community.</p>
-      </div>
-    </div>
-  </section>
+
+    <!-- Teaching Statement Section -->
+    <section class="teaching-section">
+        <h2>Teaching Statement</h2>
+        <p>
+            My teaching philosophy emphasizes student engagement, critical thinking, and active participation. I strive to create an inclusive learning environment where every student feels valued and challenged.
+        </p>
+        <!-- Teaching Highlights -->
+        <div class="teaching-grid">
+            <div class="teaching-card">
+                <img src="https://i.postimg.cc/cH5d0gVB/engagement.jpg" alt="Engagement">
+                <h3>Engagement</h3>
+                <p>I believe in the power of interactive teaching methods to spark curiosity and keep students actively involved in the learning process.</p>
+            </div>
+            <div class="teaching-card">
+                <img src="https://i.postimg.cc/JhMrqWNZ/critical.jpg" alt="Critical Thinking">
+                <h3>Critical Thinking</h3>
+                <p>Promoting problem-solving skills by encouraging students to analyze, evaluate, and create.</p>
+            </div>
+            <div class="teaching-card">
+                <img src="https://i.postimg.cc/15Fy1zMD/inclusivity.jpg" alt="Inclusivity">
+                <h3>Inclusivity</h3>
+                <p>Encouraging teamwork and mutual support to build a strong and inclusive community.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Teacher Portfolio. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
