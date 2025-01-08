@@ -1,0 +1,283 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-color: #004d99;
+  color: white;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+header h1:hover {
+  transform: scale(1.05);
+}
+/* Remove underline and ensure clickable text looks like plain text */
+header h1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Remove hover effect */
+header h1 a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* Remove focus (when clicking) outline */
+header h1 a:focus {
+  outline: none;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+nav ul li a.active {
+  background-color: #005fbf;
+}
+
+header ul li a:hover {
+  background-color: #1a73e8;
+}
+
+.materials-section {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.materials-section h2 {
+  color: #004d99;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.materials-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.materials-card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.materials-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.materials-card img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* Modal Styling */
+.image-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.image-modal.active {
+  display: flex;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+
+/* Close Button Styling */
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.close-modal:hover {
+  transform: scale(1.2);
+  color: #ff5757;
+}
+
+/* Navigation Buttons */
+.modal-nav {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.modal-nav.prev {
+  left: 10px;
+}
+
+.modal-nav.next {
+  right: 10px;
+}
+
+/* Fix navigation button hover effect */
+.modal-nav:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Tools Section */
+/* Tools Section Styling */
+.tools-section {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.tools-section h2 {
+  color: #004d99;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.tools-section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Tools Grid Styling */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.tools-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tools-card i {
+  font-size: 50px;
+  color: #004d99;
+  margin-bottom: 10px;
+}
+
+.tools-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+.tools-card a {
+  color: #004d99;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tools-card a:hover {
+  color: #1a73e8;
+  text-decoration: underline;
+}
+
+.tools-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Footer */
+footer {
+  background-color: #004d99;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
