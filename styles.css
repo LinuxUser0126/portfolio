@@ -6,10 +6,13 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #f4f4f9;
   color: #333;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header */
@@ -30,18 +33,24 @@ header h1 {
   margin: 0;
   font-size: 24px;
   letter-spacing: 1px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
 }
 
-header h1:hover {
-  transform: scale(1.05);
+header h1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
 }
 
+/* Navigation Menu */
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+}
+
+nav ul li {
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
 nav ul li a {
@@ -50,12 +59,36 @@ nav ul li a {
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-nav ul li a:hover {
-  background-color: #1a73e8;
-  transform: scale(1.05);
+nav ul li a.active {
+  background-color: #005fbf;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+nav ul.active {
+  display: flex;
+  flex-direction: column;
+  background-color: #004d99;
+  position: absolute;
+  top: 60px;
+  right: 10%;
+  width: 80%;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 /* Hero Section */
@@ -97,7 +130,6 @@ nav ul li a:hover {
   padding: 40px 10%;
 }
 
-/* Left Section: About Me */
 .left-section {
   flex: 1;
   max-width: 30%;
@@ -122,107 +154,28 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
-/* Highlight Header for Sections */
-.highlight-header h2 {
-  font-size: 20px;
-  color: #004d99;
-  background: linear-gradient(to right, #e0f7ff, #cceeff);
-  padding: 10px 15px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  text-transform: uppercase;
-  font-weight: bold;
+.right-section {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-/* Contact Details */
-.contact-details {
-  list-style: none;
-  padding: 0;
-  margin: 15px 0;
-}
-
-.contact-details li {
-  margin-bottom: 8px;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.4;
-}
-
-.contact-details li strong {
-  display: inline-block;
-  min-width: 100px;
-}
-
-.contact-details a {
-  color: #004d99;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-details a:hover {
-  text-decoration: underline;
-  color: #1a73e8;
-}
-
-/* Skills Section */
-.skills-details {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 10px;
-}
-
-.skills-details li {
-  margin-bottom: 5px;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.4;
-}
-
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skill-list span {
-  background-color: #e8f4ff;
-  color: #004d99;
-  border: 1px solid #cceeff;
-  padding: 5px 10px;
-  font-size: 14px;
-  border-radius: 5px;
-  position: relative; /* For tooltip positioning */
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.skill-list span:hover {
-  background-color: #cceeff;
-  transform: scale(1.05);
-}
-
-/* Tooltip Styling */
-.skill-list span .tooltip-text {
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.8); /* Dark background for tooltip */
-  color: white; /* Tooltip text color */
+.content-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
   text-align: center;
-  padding: 5px 10px;
-  border-radius: 5px;
-  position: absolute;
-  bottom: 120%; /* Position above the skill */
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.3s ease-in-out;
-  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.skill-list span:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
+.content-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 /* Button: Download CV */
@@ -249,100 +202,31 @@ nav ul li a:hover {
   transform: translateY(-2px);
 }
 
-/* Right Section: Cards */
-.right-section {
-  flex: 2;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.content-card {
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.content-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.content-card a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #004d99;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.content-card a:hover {
-  background-color: #1a73e8;
-}
-
 /* Footer */
 footer {
   background-color: #004d99;
   color: white;
   text-align: center;
   padding: 10px 0;
+  margin-top: auto;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 1200px) {
-  .main-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .left-section,
-  .right-section {
-    max-width: 100%;
-  }
-
-  .content-card img {
-    height: 180px;
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-
+/* Responsive Design */
+@media screen and (max-width: 768px) {
   nav ul {
-    flex-direction: column;
-    gap: 10px;
+    display: none;
   }
 
-  .hero h2 {
-    font-size: 2em;
+  nav ul.active {
+    display: flex;
   }
 
-  .hero button {
-    padding: 10px 20px;
+  .hamburger {
+    display: flex;
   }
 
   .left-section .profile-picture {
     width: 120px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero h2 {
-    font-size: 1.5em;
-  }
-
-  .hero button {
-    padding: 8px 16px;
   }
 
   .content-card img {
