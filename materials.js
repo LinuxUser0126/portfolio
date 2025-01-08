@@ -9,7 +9,7 @@ const nextButton = document.getElementById('nextButton');
 const imageSets = {
 lesson3: [
 "https://i.postimg.cc/7LZ64k5D/Tlesson3.jpg",
-"https://i.postimg.cc/bJrV784K/45.jpg",
+/*"https://i.postimg.cc/bJrV784K/45.jpg",
 "https://i.postimg.cc/mDnpRJsh/46.jpg",
 "https://i.postimg.cc/kGt15sJs/47.jpg",
 "https://i.postimg.cc/pyb05jyH/48.jpg",
@@ -27,8 +27,8 @@ lesson3: [
 "https://i.postimg.cc/kXP3b60G/60.jpg",
 "https://i.postimg.cc/Z5JGfkKh/61.jpg",
 "https://i.postimg.cc/kXNrFMCc/62.jpg",
-"https://i.postimg.cc/cLTV2Drt/63.jpg",   
-	
+"https://i.postimg.cc/cLTV2Drt/63.jpg",  */ 
+ ],	
 lesson2: [
 "https://i.postimg.cc/PJ2xPWSL/7.jpg",
 "https://i.postimg.cc/dQBDHFJq/8.jpg",
