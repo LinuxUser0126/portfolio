@@ -58,6 +58,7 @@ const imageSets = {
   
   ],
 lesson1: [
+"https://i.postimg.cc/8zDcyWD7/Tlesson1.jpg",
 "https://i.postimg.cc/j2j3rT9p/11.jpg",
 "https://i.postimg.cc/LXDQ75yk/12.jpg",
 "https://i.postimg.cc/1XYCmT1f/13.jpg",
