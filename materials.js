@@ -9,12 +9,12 @@ const nextButton = document.getElementById('nextButton');
 const imageSets = {
 lesson3: [
 "https://i.postimg.cc/7LZ64k5D/Tlesson3.jpg",
-/*"https://i.postimg.cc/bJrV784K/45.jpg",
+"https://i.postimg.cc/bJrV784K/45.jpg",
 "https://i.postimg.cc/mDnpRJsh/46.jpg",
 "https://i.postimg.cc/kGt15sJs/47.jpg",
 "https://i.postimg.cc/pyb05jyH/48.jpg",
 "https://i.postimg.cc/bY789Ftz/49.jpg",
-"https://i.postimg.cc/MZMqR8XP/50.jpg",
+/*"https://i.postimg.cc/MZMqR8XP/50.jpg",
 "https://i.postimg.cc/3J2hSCX2/51.jpg",
 "https://i.postimg.cc/L8RprYDw/52.jpg",
 "https://i.postimg.cc/DwgTFvYZ/53.jpg",
