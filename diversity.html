@@ -21,6 +21,12 @@
         <li><a href="diversity.html" class="active">Diversity Statement</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
       </ul>
+	   <!-- Hamburger Menu -->
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
     </nav>
   </header>
 
@@ -33,17 +39,17 @@
     <!-- Diversity Highlights -->
     <div class="diversity-grid">
       <div class="diversity-card">
-        <img src="C:/Users/Supervisor/Desktop/Portfolio/Image/culture.jpeg" alt="Cultural Awareness">
+        <img src="https://i.postimg.cc/C53YfyMZ/culture.jpg" alt="Cultural Awareness">
         <h3>Cultural Awareness</h3>
         <p>Promoting understanding and respect for diverse cultural backgrounds and traditions.</p>
       </div>
       <div class="diversity-card">
-        <img src="C:/Users/Supervisor/Desktop/Portfolio/Image/equity.jpeg" alt="Equity and Inclusion">
+        <img src="https://i.postimg.cc/DfH7NGQ2/equity.jpg" alt="Equity and Inclusion">
         <h3>Equity and Inclusion</h3>
         <p>Ensuring equal opportunities and embracing individual differences to create a fair learning environment.</p>
       </div>
       <div class="diversity-card">
-        <img src="C:/Users/Supervisor/Desktop/Portfolio/Image/collaboration.jpeg" alt="Collaborative Spirit">
+        <img src="https://i.postimg.cc/zGmXyh3d/collaboration.jpg" alt="Collaborative Spirit">
         <h3>Collaborative Spirit</h3>
         <p>Encouraging teamwork and mutual support to build a strong and inclusive community.</p>
       </div>
@@ -54,5 +60,14 @@
   <footer>
     <p>© 2024 Teacher Portfolio. All rights reserved.</p>
   </footer>
+  <!-- JavaScript for Hamburger Menu -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
