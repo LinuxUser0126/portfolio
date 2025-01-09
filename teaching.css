@@ -17,6 +17,10 @@ body {
 
 /* Header */
 header {
+  border-radius: 12px;
+  margin: 10px;
+  background-color: #004d99;
+  padding: 20px 10%;
   background-color: #004d99;
   color: white;
   padding: 20px 10%;
@@ -63,6 +67,10 @@ nav ul li a {
 
 nav ul li a.active {
   background-color: #005fbf;
+}
+nav ul li a:hover {
+  background-color: #1a73e8;
+  transform: scale(1.05);
 }
 
 /* Hamburger Menu */
@@ -146,6 +154,10 @@ nav ul.active {
 
 /* Footer */
 footer {
+  border-radius: 12px;
+  margin: 10px;
+  background-color: #004d99;
+  padding: 10px;
   background-color: #004d99;
   color: white;
   text-align: center;
@@ -153,8 +165,63 @@ footer {
   margin-top: auto;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .teaching-card img {
+    height: 150px;
+  }
+
+  .teaching-card h3 {
+    font-size: 18px;
+  }
+
+  .teaching-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+   nav ul {
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .teaching-card img {
+    height: 150px;
+  }
+
+  .teaching-card h3 {
+    font-size: 18px;
+  }
+
+  .teaching-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
   nav ul {
     display: none;
   }
