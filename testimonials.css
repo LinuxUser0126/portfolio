@@ -15,7 +15,12 @@ body {
   min-height: 100vh;
 }
 
+/* Header */
 header {
+  border-radius: 12px;
+  margin: 10px;
+  background-color: #004d99;
+  padding: 20px 10%;
   background-color: #004d99;
   color: white;
   padding: 20px 10%;
@@ -32,14 +37,8 @@ header h1 {
   margin: 0;
   font-size: 24px;
   letter-spacing: 1px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
 }
 
-header h1:hover {
-  transform: scale(1.05);
-}
-/* Remove underline and ensure clickable text looks like plain text */
 header h1 a {
   color: white;
   text-decoration: none;
@@ -47,21 +46,15 @@ header h1 a {
   font-weight: bold;
 }
 
-/* Remove hover effect */
-header h1 a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-/* Remove focus (when clicking) outline */
-header h1 a:focus {
-  outline: none;
-}
-
+/* Navigation Menu */
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+}
+
+nav ul li {
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
 nav ul li a {
@@ -70,7 +63,10 @@ nav ul li a {
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a.active {
+  background-color: #005fbf;
 }
 
 nav ul li a:hover {
@@ -78,10 +74,31 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
-nav ul li a.active {
-  background-color: #005fbf;
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+nav ul.active {
+  display: flex;
+  flex-direction: column;
+  background-color: #004d99;
+  position: absolute;
+  top: 60px;
+  right: 10%;
+  width: 80%;
+  border-radius: 8px;
+  padding: 10px;
+}
 /* Testimonials Section */
 .testimonials-section {
   padding: 40px 10%;
@@ -148,8 +165,6 @@ nav ul li a.active {
   font-size: 14px;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for better readability */
 }
-
-/* Modal Styling */
 /* Modal Styling */
 .image-modal {
   visibility: hidden; /* Initially hidden */
@@ -207,9 +222,57 @@ nav ul li a.active {
 
 /* Footer */
 footer {
+  border-radius: 12px;
+  margin: 10px;
+  background-color: #004d99;
+  padding: 10px;
   background-color: #004d99;
   color: white;
   text-align: center;
   padding: 10px 0;
   margin-top: auto;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+   nav ul {
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+   nav ul {
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
