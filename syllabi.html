@@ -20,6 +20,12 @@
         <li><a href="diversity.html">Diversity Statement</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
       </ul>
+	  <!-- Hamburger Menu -->
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
     </nav>
   </header>
 
@@ -48,7 +54,7 @@
             <li>Strings</li>
             <li>Final Project</li>
           </ul>
-          <a href="C:/Users/Supervisor/Desktop/Portfolio/Files/syllabi1.pdf" target="_blank" rel="noopener noreferrer" class="download-button">Download Syllabus</a>
+          <a href="https://drive.google.com/file/d/171tN7T3hrb3keqzwG25eDOq71opNea3W/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button">Download Syllabus</a>
         </div>
       </div>
 
@@ -69,7 +75,7 @@
             <li>Introduction to APIs</li>
             <li>Building Interactive Web Applications</li>
           </ul>
-          <a href="C:/Users/Supervisor/Desktop/Portfolio/Files/syllabi2.pdf" target="_blank" rel="noopener noreferrer" class="download-button">Download Syllabus</a>
+          <a href="https://drive.google.com/file/d/1pnj7Ab2TxwEDZnTA_qD-0vQqphBYMHRN/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button">Download Syllabus</a>
         </div>
       </div>
 
@@ -91,7 +97,7 @@
             <li>IoT Basics and Cloud Connectivity</li>
             <li>Final Project: Smart Home System</li>
           </ul>
-          <a href="C:/Users/Supervisor/Desktop/Portfolio/Files/syllabi3.pdf" target="_blank" rel="noopener noreferrer" class="download-button">Download Syllabus</a>
+          <a href="https://drive.google.com/file/d/1ecITXTC5d7g5iV0epfCfnsvJk4BZ_Jl3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button">Download Syllabus</a>
         </div>
       </div>
     </div>
@@ -101,5 +107,16 @@
   <footer>
     <p>© 2024 Teacher Portfolio. All rights reserved.</p>
   </footer>
+  
+  <!-- JavaScript for Hamburger Menu -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+  
 </body>
 </html>
