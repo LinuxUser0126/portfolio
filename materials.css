@@ -6,12 +6,21 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #f4f4f9;
   color: #333;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+/* Header */
 header {
+  border-radius: 12px;
+  margin: 10px;
+  background-color: #004d99;
+  padding: 20px 10%;
   background-color: #004d99;
   color: white;
   padding: 20px 10%;
@@ -28,14 +37,8 @@ header h1 {
   margin: 0;
   font-size: 24px;
   letter-spacing: 1px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
 }
 
-header h1:hover {
-  transform: scale(1.05);
-}
-/* Remove underline and ensure clickable text looks like plain text */
 header h1 a {
   color: white;
   text-decoration: none;
@@ -43,38 +46,60 @@ header h1 a {
   font-weight: bold;
 }
 
-/* Remove hover effect */
-header h1 a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-/* Remove focus (when clicking) outline */
-header h1 a:focus {
-  outline: none;
-}
-
-header ul {
+/* Navigation Menu */
+nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-header ul li a {
+nav ul li {
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 12px;
+  border-radius: 5px;
 }
 
 nav ul li a.active {
   background-color: #005fbf;
 }
-
-header ul li a:hover {
+nav ul li a:hover {
   background-color: #1a73e8;
+  transform: scale(1.05);
 }
 
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+nav ul.active {
+  display: flex;
+  flex-direction: column;
+  background-color: #004d99;
+  position: absolute;
+  top: 60px;
+  right: 10%;
+  width: 80%;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/*main section */
 .materials-section {
   padding: 40px 10%;
   text-align: center;
@@ -253,13 +278,19 @@ header ul li a:hover {
 
 
 /* Footer */
+/* Footer */
 footer {
+  border-radius: 12px;
+  margin: 10px;
+  background-color: #004d99;
+  padding: 10px;
   background-color: #004d99;
   color: white;
   text-align: center;
   padding: 10px 0;
-  margin-top: 20px;
+  margin-top: auto;
 }
+
 
 /* Animations */
 @keyframes fadeIn {
@@ -279,5 +310,92 @@ footer {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+
+
+/* Responsive Design for Materials Section */
+@media (max-width: 1024px) {
+  .materials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .materials-section h2 {
+    font-size: 24px;
+  }
+
+  .materials-section p {
+    font-size: 14px;
+  }
+   nav ul {
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .materials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .materials-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .materials-section h2 {
+    font-size: 20px;
+  }
+
+  .materials-section p {
+    font-size: 13px;
+  }
+   nav ul {
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .materials-section h2 {
+    font-size: 18px;
+  }
+
+  .materials-section p {
+    font-size: 12px;
+  }
+
+  .materials-card {
+    padding: 8px;
+  }
+
+  .materials-card img {
+    border-radius: 8px;
+  }
+   nav ul {
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
   }
 }
