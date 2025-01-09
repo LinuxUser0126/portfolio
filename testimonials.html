@@ -1,123 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testimonials</title>
-  <link rel="stylesheet" href="testimonials.css">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <h1><a href="index.html">Teacher Portfolio</a></h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="teaching.html">Teaching Statement</a></li>
-        <li><a href="syllabi.html">Syllabi</a></li>
-        <li><a href="materials.html">Materials</a></li>
-        <li><a href="diversity.html">Diversity Statement</a></li>
-        <li><a href="testimonials.html" class="active">Testimonials</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Colleagues Section -->
-    <section class="testimonials-section">
-        <h2>Colleagues</h2>
-        <p>Feedback from colleagues reflecting on shared goals and professional collaboration.</p>
-        <div class="image-gallery">
-            <!-- Colleague 1 -->
-            <div class="testimonial-card" data-modal="colleague1">
-                <img src="https://i.postimg.cc/3N4YRrh5/kompan.jpg" alt="Colleague 1" class="zoomable-image" data-full="Image/materials_with_message.jpg">
-                <div class="overlay">
-                    <h3>Mr. Khoompan Jantawan</h3>
-                    <!-- Message: 
-                    "Teaching alongside you for six years was a privilege. 
-                    Your commitment to your students and your innovative approach to education 
-                    have always been inspiring."
-                    -->
-                </div>
-            </div>
-            <!-- Colleague 2 -->
-            <div class="testimonial-card" data-modal="colleague2">
-                <img src="https://i.postimg.cc/V6NzxBHN/Graeme.jpg" alt="Colleague 2" class="zoomable-image" data-full="Image/Graeme_with_message.jpg">
-                <div class="overlay">
-                    <h3>Mr. Graeme Kay</h3>
-                    <!-- Message: 
-                    "As a Foreign Coordinator and Liaison Officer, your professionalism and integrity 
-                    fostered a respectful and collaborative environment."
-                    -->
-                </div>
-            </div>
-            <!-- Colleague 3 -->
-            <div class="testimonial-card" data-modal="colleague3">
-                <img src="https://i.postimg.cc/RZQ9qbkF/LJ.jpg" alt="Colleague 3" class="zoomable-image" data-full="Image/LJ_with_message.jpg">
-                <div class="overlay">
-                    <h3>Ms. LJ</h3>
-                    <!-- Message: 
-                    "As an HR, your dedication to fairness, strong organizational skills, 
-                    and adherence to policies have played a crucial role in maintaining a supportive environment."
-                    -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Students Section -->
-    <section class="testimonials-section">
-        <h2>Students</h2>
-        <p>Reflections and experiences from students during their learning journey under my mentorship.</p>
-        <div class="image-gallery">
-            <!-- Student 1 -->
-            <div class="testimonial-card" data-modal="student1">
-                <img src="https://i.postimg.cc/hjwRHFdC/Stud1.png" alt="Student 1" class="zoomable-image" data-full="Image/stud1_with_message.png">
-                <div class="overlay">
-                    <h3>Anan Rattanakorn</h3>
-                    <!-- Message: 
-                    "Your teaching is both challenging and rewarding. You balance strict discipline with support, 
-                    helping us grow academically and personally."
-                    -->
-                </div>
-            </div>
-            <!-- Student 2 -->
-            <div class="testimonial-card" data-modal="student2">
-                <img src="https://i.postimg.cc/wMmYzW59/Stud2.png" alt="Student 2" class="zoomable-image" data-full="Image/stud2_with_message.png">
-                <div class="overlay">
-                    <h3>Niran Somchai</h3>
-                    <!-- Message: 
-                    "Your emphasis on teamwork and collaboration has made a big difference in how we approach learning. 
-                    Your guidance prepares us for real-world challenges."
-                    -->
-                </div>
-            </div>
-            <!-- Student 3 -->
-            <div class="testimonial-card" data-modal="student3">
-                <img src="https://i.postimg.cc/QN9FVh0d/Stud3.png" alt="Student 3" class="zoomable-image" data-full="Image/stud3_with_message.png">
-                <div class="overlay">
-                    <h3>Phoompan Panthong</h3>
-                    <!-- Message: 
-                    "Your teaching approach, combined with technology and visual aids, 
-                    makes learning engaging and effective."
-                    -->
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<!-- Modal -->
-<div class="image-modal" id="imageModal">
-    <span class="close-modal" id="closeModal">&times;</span>
-    <img class="modal-content" id="modalImage" alt="Zoomed Image">
-</div>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Teacher Portfolio. All rights reserved.</p>
-  </footer>
-
-  <script src="testimonials.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Testimonials</title>
+		<link rel="stylesheet" href="testimonials.css">
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<h1><a href="index.html">Teacher Portfolio</a></h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="teaching.html">Teaching Statement</a></li>
+					<li><a href="syllabi.html">Syllabi</a></li>
+					<li><a href="materials.html">Materials</a></li>
+					<li><a href="diversity.html">Diversity Statement</a></li>
+					<li><a href="testimonials.html" class="active">Testimonials</a></li>
+				</ul>
+				<!-- Hamburger Menu -->
+				<div class="hamburger">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</nav>
+		</header>
+		
+		<main>
+			<!-- Colleagues Section -->
+			<section class="testimonials-section">
+				<h2>Colleagues</h2>
+				<p>Feedback from colleagues reflecting on shared goals and professional collaboration.</p>
+				<div class="image-gallery">
+					<!-- Colleague 1 -->
+					<div class="testimonial-card" data-modal="colleague1">
+						<img src="https://i.postimg.cc/3N4YRrh5/kompan.jpg" alt="Colleague 1" class="zoomable-image" data-full="https://i.postimg.cc/8Pfzk4kJ/6.jpg">
+						<div class="overlay">
+							<h3>Mr. Khoompan Jantawan</h3>
+							<!-- Message: 
+								"Teaching alongside you for six years was a privilege. 
+								Your commitment to your students and your innovative approach to education 
+								have always been inspiring."
+							-->
+						</div>
+					</div>
+					<!-- Colleague 2 -->
+					<div class="testimonial-card" data-modal="colleague2">
+						<img src="https://i.postimg.cc/V6NzxBHN/Graeme.jpg" alt="Colleague 2" class="zoomable-image" data-full="https://i.postimg.cc/MZFG8NwJ/5.jpg">
+						<div class="overlay">
+							<h3>Mr. Graeme Kay</h3>
+							<!-- Message: 
+								"As a Foreign Coordinator and Liaison Officer, your professionalism and integrity 
+								fostered a respectful and collaborative environment."
+							-->
+						</div>
+					</div>
+					<!-- Colleague 3 -->
+					<div class="testimonial-card" data-modal="colleague3">
+						<img src="https://i.postimg.cc/RZQ9qbkF/LJ.jpg" alt="Colleague 3" class="zoomable-image" data-full="https://i.postimg.cc/3NVrC41x/4.jpg">
+						<div class="overlay">
+							<h3>Ms. LJ</h3>
+							<!-- Message: 
+								"As an HR, your dedication to fairness, strong organizational skills, 
+								and adherence to policies have played a crucial role in maintaining a supportive environment."
+							-->
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Students Section -->
+			<section class="testimonials-section">
+				<h2>Students</h2>
+				<p>Reflections and experiences from students during their learning journey under my mentorship.</p>
+				<div class="image-gallery">
+					<!-- Student 1 -->
+					<div class="testimonial-card" data-modal="student1">
+						<img src="https://i.postimg.cc/hjwRHFdC/Stud1.png" alt="Student 1" class="zoomable-image" data-full="https://i.postimg.cc/nrCcDYvW/1.jpg">
+						<div class="overlay">
+							<h3>Anan Rattanakorn</h3>
+							<!-- Message: 
+								"Your teaching is both challenging and rewarding. You balance strict discipline with support, 
+								helping us grow academically and personally."
+							-->
+						</div>
+					</div>
+					<!-- Student 2 -->
+					<div class="testimonial-card" data-modal="student2">
+						<img src="https://i.postimg.cc/wMmYzW59/Stud2.png" alt="Student 2" class="zoomable-image" data-full="https://i.postimg.cc/G2MmtSsY/2.jpg">
+						<div class="overlay">
+							<h3>Niran Somchai</h3>
+							<!-- Message: 
+								"Your emphasis on teamwork and collaboration has made a big difference in how we approach learning. 
+								Your guidance prepares us for real-world challenges."
+							-->
+						</div>
+					</div>
+					<!-- Student 3 -->
+					<div class="testimonial-card" data-modal="student3">
+						<img src="https://i.postimg.cc/QN9FVh0d/Stud3.png" alt="Student 3" class="zoomable-image" data-full="https://i.postimg.cc/hj4GSqhc/3.jpg">
+						<div class="overlay">
+							<h3>Phoompan Panthong</h3>
+							<!-- Message: 
+								"Your teaching approach, combined with technology and visual aids, 
+								makes learning engaging and effective."
+							-->
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<!-- Modal -->
+		<div class="image-modal" id="imageModal">
+			<span class="close-modal" id="closeModal">&times;</span>
+			<img class="modal-content" id="modalImage" alt="Zoomed Image">
+		</div>
+		
+		<!-- Footer -->
+		<footer>
+			<p>&copy; 2024 Teacher Portfolio. All rights reserved.</p>
+		</footer>
+		
+		<script src="testimonials.js"></script>
+		<!-- JavaScript for Hamburger Menu -->
+		<script>
+			const hamburger = document.querySelector('.hamburger');
+			const navLinks = document.querySelector('nav ul');
+			
+			hamburger.addEventListener('click', () => {
+				navLinks.classList.toggle('active');
+			});
+		</script>
+	</body>
 </html>
