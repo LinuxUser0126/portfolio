@@ -23,6 +23,12 @@
         <li><a href="diversity.html">Diversity Statement</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
       </ul>
+	   <!-- Hamburger Menu -->
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
     </nav>
   </header>
 
@@ -33,7 +39,7 @@
     <!-- Image Gallery -->
     <div class="materials-grid">
       <div class="materials-card">
-        <img src="https://i.postimg.cc/8zDcyWD7/Tlesson1.jpg" alt="Lesson 1" class="zoomable-image" data-context="lesson1">
+        <img src="https://i.postimg.cc/MKT4md3s/10.jpg" alt="Lesson 1" class="zoomable-image" data-context="lesson1">
         <h3>Lesson 1</h3>
         <p>Introduction to the basics of the subject.</p>
       </div>
@@ -43,7 +49,7 @@
         <p>Deep dive into intermediate topics.</p>
       </div>
       <div class="materials-card">
-		  <img src="https://i.postimg.cc/7LZ64k5D/Tlesson3.jpg" alt="Lesson 3" class="zoomable-image" data-context="lesson3">
+		  <img src="https://i.postimg.cc/0yhLQDfV/44.jpg" alt="Lesson 3" class="zoomable-image" data-context="lesson3">
         <h3>Lesson 3</h3>
         <p>Advanced applications and problem-solving.</p>
       </div>
@@ -132,9 +138,9 @@
     <!-- Image Gallery -->
     <div class="materials-grid">
       <div class="materials-card">
-        <img src="C:/Users/Supervisor/Desktop/Portfolio/Image/StudentWork/Work1.jpg" alt="Student Work 1" class="zoomable-image" data-context="student1">
+        <img src="https://i.postimg.cc/hj4jCkdz/1.jpg" alt="Student Work 1" class="zoomable-image" data-context="student1">
         <h3>Student Work 1</h3>
-        <p>Demonstrating innovation and excellence.</p>
+        <p>Demonstrating creativity and passion for making a presentation.</p>
       </div>
       <div class="materials-card">
         <img src="https://i.postimg.cc/nL3JG9cf/student2.jpg" alt="Student Work 2" class="zoomable-image" data-context="student2">
@@ -165,5 +171,15 @@
   </footer>
 
   <script src="materials.js"></script>
+   <!-- JavaScript for Hamburger Menu -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+  
 </body>
 </html>
