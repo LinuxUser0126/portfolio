@@ -1,4 +1,4 @@
-/* General Reset */
+* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -63,6 +63,11 @@ nav ul li a {
 
 nav ul li a.active {
   background-color: #005fbf;
+}
+
+nav ul li a:hover {
+  background-color: #1a73e8;
+  transform: scale(1.05);
 }
 
 /* Hamburger Menu */
@@ -283,34 +288,37 @@ nav ul.active {
 }
 
 .content-card {
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a 3D effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .content-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px; /* Rounded corners for images */
+  margin-bottom: 15px;
 }
 
-/* Footer */
 footer {
-    background-color: #004d99;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+  background-color: #004d99;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+  margin-top: auto;
 }
+
+
 
 
 /* Responsive Styles */
-@media (max-width: 768px) {
-    .hamburger {
+@media (max-width: 1024px) {
+  .hamburger {
         display: flex;
     }
 
@@ -339,4 +347,77 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+	.content-card img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+   .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero button {
+        padding: 10px 20px;
+    }
+
+    .left-section,
+    .right-section {
+        max-width: 100%;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+	.content-card img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero button {
+        padding: 10px 20px;
+    }
+
+    .left-section,
+    .right-section {
+        max-width: 100%;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+	.content-card img {
+    height: 150px;
+  }
 }
